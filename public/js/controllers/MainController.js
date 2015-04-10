@@ -1,9 +1,5 @@
 app.controller('MainController', ['$scope', function($scope) { 
-  //$scope.title = 'Some Projects that I worked on'; 
-  $scope.plusOne = function(index) { 
-  	$scope.projects[index].likes += 1; 
-	};
-	$scope.projects = [ 
+  $scope.projects = [ 
   { 
     name: 'Avalon', 
     date: new Date('2014', '03', '08'), 
