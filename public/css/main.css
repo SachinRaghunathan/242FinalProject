@@ -34,7 +34,7 @@ body {
  padding: 20px 0;
 }
 p {
- padding: 50px 250px 0px 250px;
+ padding: 50px 150px 0px 150px;
 }
 #projects {
  width:100%;
@@ -48,20 +48,32 @@ p {
  background-color:black;
  color:white;
 }
+.container {
+ max-width: 880px;
+}
+.title {
+ padding: 10px 0px 0px 0px;
+ /*vertical-align:Baseline;*/
+ color: #444;
+ margin: 0;
+ text-align:Center;
+ font-size: Normal;
+ font-weight: 800;
+}
 .jumbotron {
  background: white;
  margin-bottom: 0px;
 }
 .thumbnail {
- border: 0px;
+ border: 10px;
  position: relative;
  padding: 50px;
- border-radius: 0;
- margin-bottom: 50px;
+ border-radius: 10px;
+ /*margin-bottom: 50px;*/
 }
 .thumbnail img {
- margin-top: 10px;
- margin-bottom: 30px;
+ /*margin-top: 10px;*/
+ /*margin-bottom: 30px;*/
  max-width: 100%;
 }
 .footer {

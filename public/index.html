@@ -3,7 +3,7 @@
 
 <head>
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:500,300,700,400' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" />
 
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
@@ -13,7 +13,9 @@
 <body ng-app="myApp">
   <div class="header">
     <div class="container">
-      <h1>Sachin Raghunathan</h1>
+      <a href="/">
+        <h1>Sachin Raghunathan</h1>
+      </a>
     </div>
   </div>
 
@@ -40,10 +42,10 @@
       <div class="container">
         <h1>Projects</h1>
 
-        <div ng-repeat="project in projects" class="col-md-6">
+        <div ng-repeat="project in projects" class="col-md-4">
           <div class="thumbnail">
             <img ng-src="{{ project.cover }}">
-            <p class="title">{{ project.name }}</p>
+            <h4 class="title">{{ project.name }}</h4>
           </div>
         </div>
       </div>
@@ -63,6 +65,9 @@
       </a>
       <a href="https://twitter.com/SachRaghunathan">
         <img src="http://www.selfpublishingadvice.org/wp-content/uploads/2013/10/twitter-150x150.png" width="110px" />
+      </a>
+      <a href="https://www.linkedin.com/in/SachinRaghunathan">
+        <img src="https://lh3.ggpht.com/XgjH1SF8ce-fC597Y0gJqnLt-PpZ1zlE4xUcB8GH6_B5i00SR7jix5Re-T1kkL52VA=w300-rw" width="110px" />
       </a>
       <a href="mailto:srghnth2@illinois.edu">
         <img src="http://www.macfixer.com/images/email.svg" width="110px" />
