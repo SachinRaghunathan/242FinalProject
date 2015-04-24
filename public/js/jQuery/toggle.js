@@ -1,5 +1,33 @@
-$(document).ready(function(){
-  $(".toggle").click(function(){ 
-    $(".menu").slideToggle(700);
-  });
-});
+(function( window ){
+
+    var body = document.body,
+        mask = document.createElement("div"),
+        togglePushLeft = document.querySelector( ".toggle-push-left" ),
+        activeNav;
+    
+
+    mask.className = "mask";
+
+    togglePushLeft.addEventListener( "click", function(){
+		classie.add( body, "pml-open" );
+		document.body.appendChild(mask);
+		activeNav = "pml-open";
+	} );
+
+    /* hide active menu if mask is clicked */
+    mask.addEventListener( "click", function(){
+        classie.remove( body, activeNav );
+        activeNav = "";
+        document.body.removeChild(mask);
+    } );
+
+    /* hide active menu if close menu button is clicked */
+    [].slice.call(document.querySelectorAll(".close-menu")).forEach(function(el,i){
+        el.addEventListener( "click", function(){
+            classie.remove( body, activeNav );
+            activeNav = "";
+            document.body.removeChild(mask);
+        } );
+    });
+
+})( window );

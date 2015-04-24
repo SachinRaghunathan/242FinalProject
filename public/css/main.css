@@ -4,6 +4,7 @@ body {
  padding: 0;
  font-family: 'Roboto', sans-serif;
  width: 100%;
+ overflow-x: hidden;
 }
 .header {
  padding: 15px;
@@ -117,46 +118,164 @@ background-color: #ff9000;
  margin: 0 10px;
 }
 
-.menu {
-  background: #1abc9c;
-  display: none;
-  width: 100%;
-}
-
-.menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.menu ul li {
-  color: #fff;
-  font-size: 12px;
-  letter-spacing: 2px;
-  padding: 15px 0;
-  text-transform: uppercase;
-}
-
-.menu ul li:hover { background: #16a085; }
-
-.menu a {
-  text-decoration: none;
-  color: #fff;
-}
-
 #page-header-bg {
   width: 100%;
   background-color: #033142;
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
   background-attachment: fixed;
-  height: 370px;
   margin-bottom: 0;
-  margin-top: -70px;
+  margin-top: 0px;
+  height:700px;
   color: #fff;
+  background-image:url(http://stanford.edu/~jbaena/stars.jpg);
+}
+
+#page-header-bg h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: -1px;
+  color: #FFFFFF;
+}
+#page-header-bg .subheader {
+  margin-left:0px;
+  font-size: 20px;
+  line-height: 28px;
+  color: #FFFFFF!important;
+  
+}
+#leftpush {
+  color: #FFF;
+  text-shadow: 1px 1px 1px #000;
+  position: fixed;
+  top: 80px;
+  left: 92px;
+  transition: margin-left .3s;
+  z-index: 19;
+}
+section {
+    margin-bottom: 30px
+}
+section h1 {
+    font-family: "Oswald", sans-serif;
+    margin-bottom: 10px;
+}
+section p {
+    margin-bottom: 30px
+}
+section p:last-child {
+    margin-bottom: 0
+}
+section:last-child {
+    margin-bottom: 0
+}
+section.toggle {
+    text-align: center
+}
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+/* ------------------------------------------------------------ *\
+|* ------------------------------------------------------------ *|
+|* Menus
+|* ------------------------------------------------------------ *|
+\* ------------------------------------------------------------ */
+/* general style for all menus */
+nav.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: #67b5d1;
+    overflow: hidden;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+nav.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav.menu a {
+    font-weight: 300;
+    color: #fff;
+}
+button.close-menu {
+    background-color: #3184a1;
+    color: #fff;
+}
+button.close-menu:focus {
+    outline: none
+}
+
+nav.push-menu-left {
+    top: 0;
+    width: 300px;
+    height: 100%;
+}
+nav.push-menu-left li {
+    display: block;
+    text-align: center;
+    border-bottom: solid 1px #3184a1;
+    border-top: solid 1px #b5dbe9;
+}
+nav.push-menu-left li:first-child {
+    border-top: none
+}
+nav.push-menu-left li:last-child {
+    border-bottom: none
+}
+nav.push-menu-left a {
+    display: block;
+    padding: 10px;
+    font-size: 18px;
+}
+nav.push-menu-left button.close-menu {
+    margin: 10px 0;
+    padding: 10px 30px;
+    background-color: #3184a1;
+    color: #fff;
+}
+nav.push-menu-left {
+    left: -300px
+}
+body.pml-open nav.push-menu-left {
+    left: 0
+}
+body.pml-open #wrapper {
+    left: 300px
+}
+
+#nav-toggler {
+ top: 30px;
+}
+.col {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+}
+
+.blogh {
+  top: 200px;
+}
+.dp {
+  margin-right: 20px;
+  float: left;
+  width: 115px;
+  height: 115px;
+  background-image: url(https://lh3.googleusercontent.com/-eTh8LgAlkbo/AAAAAAAAAAI/AAAAAAAAAM4/Op4gRULUIwE/s120-c/photo.jpg);
+  border-radius: 100px;
+  margin-top: -3px;
+  border: 2px solid #fff;
 }

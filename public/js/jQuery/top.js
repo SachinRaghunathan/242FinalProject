@@ -19,6 +19,7 @@ jQuery(document).ready(function()
 
       jQuery('.back-to-top').click(function(event)
       {
+        console.log("top blah");
         event.preventDefault();
         jQuery('html, body').animate(
         {
