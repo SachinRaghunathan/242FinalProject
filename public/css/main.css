@@ -60,6 +60,33 @@ p {
  font-size: Normal;
  font-weight: 800;
 }
+
+.aboutscroll {
+ margin-left:5em; 
+}
+.blogscroll {
+ margin-left:1em; 
+}
+
+.back-to-top {
+background: none;
+margin: 0;
+position: fixed;
+bottom: 0;
+right: 0;
+width: 70px;
+height: 70px;
+z-index: 100;
+display: none;
+text-decoration: none;
+color: #ffffff;
+background-color: #ff9000;
+}
+
+.back-to-top i {
+  font-size: 60px;
+}
+
 .jumbotron {
  background: white;
  margin-bottom: 0px;
@@ -88,4 +115,48 @@ p {
 }
 .footer img {
  margin: 0 10px;
+}
+
+.menu {
+  background: #1abc9c;
+  display: none;
+  width: 100%;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu ul li {
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: 2px;
+  padding: 15px 0;
+  text-transform: uppercase;
+}
+
+.menu ul li:hover { background: #16a085; }
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#page-header-bg {
+  width: 100%;
+  background-color: #033142;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+  height: 370px;
+  margin-bottom: 0;
+  margin-top: -70px;
+  color: #fff;
 }

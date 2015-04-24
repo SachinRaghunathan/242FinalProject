@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:500,300,700,400' rel='stylesheet' type='text/css'>
+  <link href="css/main.css" rel="stylesheet" />
+
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  
+
+</head>
+
+<body ng-app="app">
+  <!-- Modules -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+  <script src="js/app/app.js"></script>
+  
+  <!-- Controllers -->
+  <script src="js/controllers/avalon.js"></script>
+
+  <div class="header">
+      <a href="/#projects">
+        <h1>&#8592 Back</h1>
+      </a>
+  </div>
+
+  <div class="main" ng-controller="avalon">
+    <div class="jumbotron" id="about">
+      <div class="container">
+        <img ng-src="{{ picture }}">
+        <h1>About</h1>
+        <p>
+        {{data}}
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+  
+</body>
+
+</html>
