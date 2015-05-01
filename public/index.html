@@ -6,6 +6,7 @@
   <link href='https://fonts.googleapis.com/css?family=Lato:500,300,700,400' rel='stylesheet' type='text/css'>
   <link href="css/main.css" rel="stylesheet" />
 
+  <!-- Angular -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
   <!-- Modules -->
@@ -21,13 +22,17 @@
   <script src ="js/jQuery/top.js"></script>
   <script src ="js/jQuery/scroll.js"></script>
   <script src="js/classie.js"></script>
+  <script type="text/javascript" src="js/jQuery/rotateText.js"></script>
   
 </head>
 
 <body>
+  <!-- Back to top icon -->
   <a href="#" class="back-to-top" style="display: inline;">
     <i class="fa fa-arrow-circle-up"></i>
   </a>
+  
+  <!-- navigation menu left -->
   <nav class="menu push-menu-left">
     <ul>
         <li><button class="close-menu">&larr; Close</button></li>
@@ -37,27 +42,31 @@
         <li><a class="projectscroll">Projects</a></li>
         <li><a class="contactscroll">Contacts</a></li>
     </ul>
-  </nav><!-- /slide menu left -->
+  </nav>
   
+  <!-- Header -->
   <div id="page-header-bg">
-    
+    <!-- Toggle menu button -->
     <button class="nav-toggler toggle-push-left" id="leftpush">
       <i class="fa fa-bars fa-2x"></i>
     </button>
     
+    <!-- Header content -->
     <div class="container">
         <div class="ro" style="width: 560px; margin: 0 auto;">
           <div class="col blogh">
             <div class="dp"> </div>
-						
 						<h1>Sachin Raghunathan</h1>
-            <span class="subheader">Coffee Addict, CS &#64; University of Illinois</span>
+            <span class="subheader element"></span>
+            <span class="typed-cursor">|</span>
           </div>
         </div>
     </div>
   </div>
   
+  
   <div class="main" ng-controller="MainController">
+    <!-- About section -->
     <div class="jumbotron" id="about">
       <div class="container">
         <h1>About</h1>
@@ -67,6 +76,7 @@
       </div>
     </div>
 
+    <!-- Blog section -->
     <div class="jumbotron" id="blog">
       <div class="container">
         <h1 id="blog-header">Blog</h1>
@@ -75,11 +85,51 @@
         </p>
       </div>
     </div>
-
+    
+    <!-- Projects section -->
     <div class="jumbotron" id="projects">
       <div class="container">
         <h1>Projects</h1>
-
+        <br>
+        <div class="container-a4">
+		<ul class="caption-style-4">
+			<li>
+				<img width="283" height="250" src="http://cf.geekdo-images.com/images/pic1398895_md.jpg" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>Avalon<p>
+						<p>An online version of the Popular game Resistance</p>
+						<p><a href = "/avalon"> Read More</a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img width="283" height="250" src="http://challengepost-s3-challengepost.netdna-ssl.com/photos/production/software_photos/000/157/670/datas/gallery.jpg" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>OpenSesame<p>
+						<p>A hands free bathroom!</p>
+						<p><a href = "/OpenSesame"> Read More</a></p>
+					</div>
+				</div>
+			</li>
+			<li>
+				<img width="283" height="250" src="http://i.imgur.com/dLReZiJ.jpg?2" alt="">
+				<div class="caption">
+					<div class="blur"></div>
+					<div class="caption-text">
+						<p>CommuniVoice<p>
+						<p>Help your community,<br> on the go!</p>
+						<p><a href = "/communivoice"> Read More</a></p>
+					</div>
+				</div>
+			</li>
+			
+			</ul>
+        
+        <!--
         <div ng-repeat="project in projects" class="col-md-4">
           <div class="thumbnail">
             <a href="{{project.url}}">
@@ -88,11 +138,13 @@
             <h4 class="title">{{ project.name }}</h4>
           </div>
         </div>
+        -->
       </div>
     </div>
   </div>
   </div>
 
+  <!-- Footer -->
   <div class="footer">
     <div class="container">
       <h1>Let's get in touch!</h1>

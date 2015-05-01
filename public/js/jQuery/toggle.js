@@ -8,6 +8,7 @@
 
     mask.className = "mask";
 
+    /* add active menu if button is clicked */
     togglePushLeft.addEventListener( "click", function(){
 		classie.add( body, "pml-open" );
 		document.body.appendChild(mask);
@@ -28,6 +29,16 @@
             activeNav = "";
             document.body.removeChild(mask);
         } );
+    });
+    
+    $(function(){
+        $(".element").typed({
+            strings: ["Coffee Addict", "CS &#64; University of Illinois"],
+            typeSpeed: 40,
+            loop: true,
+            showCursor: false,
+            backDelay: 3000
+        });
     });
 
 })( window );
